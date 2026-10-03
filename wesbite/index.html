@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html data-lang="ar" data-theme="light" dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-i18n="page.title">أكاديمية إنسان لبناء القيم | قيم الإنسان.. حضارة وعمران</title>
+
+  <meta name="description" content="أكاديمية إنسان لبناء القيم — صرح تربوي قيمي يسعى لتمكين الإنسان وبناء وعيه ليكون صانعاً للحضارة ورائداً في أثره." />
+  <meta property="og:title" content="أكاديمية إنسان لبناء القيم" />
+  <meta property="og:description" content="رحلة تربوية متكاملة تبدأ بالمعرفة الرشيدة، وتنمو بالقيم الراسخة، وتتحول إلى مهارات عملية." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="images/image.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome (with preload hint) -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header">
+    <div class="nav-wrap">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="#home">
+          <img
+            class="brand-logo-img"
+            src="images/image.png"
+            alt="شعار أكاديمية إنسان"
+            data-i18n-attr="alt:logo.brand"
+            loading="eager"
+          />
+          <span class="brand-title">
+            <span data-i18n="brand.line1">أكاديمية إنسان</span><br />
+            <span data-i18n="brand.line2">لبناء القيم</span>
+          </span>
+        </a>
+
+        <ul class="desktop-nav">
+          <li><a class="nav-link active" href="#home"      data-i18n="nav.home">الرئيسية</a></li>
+          <li><a class="nav-link"        href="#about"     data-i18n="nav.about">من نحن</a></li>
+          <li><a class="nav-link"        href="#philosophy" data-i18n="nav.philosophy">فلسفتنا</a></li>
+          <li><a class="nav-link"        href="#programs"  data-i18n="nav.programs">برامجنا</a></li>
+          <li><a class="nav-link"        href="#ahdaf"     data-i18n="nav.goals">أهدافنا</a></li>
+          <li><a class="nav-link"        href="#join-team" data-i18n="nav.team">انضم لفريقنا</a></li>
+          <li><a class="nav-link"        href="#testimonials" data-i18n="nav.testimonials">قالوا عنا</a></li>
+          <li><a class="nav-link"        href="#contact"   data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="site-controls">
+            <button
+              id="themeToggle"
+              class="site-control"
+              type="button"
+              title="الوضع الداكن"
+              aria-label="تفعيل الوضع الداكن"
+              data-i18n-attr="title:controls.theme.title,aria-label:controls.theme.aria"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <button
+              id="languageToggle"
+              class="site-control language-control"
+              type="button"
+              title="English"
+              aria-label="تغيير اللغة إلى الإنجليزية"
+              data-i18n-attr="aria-label:controls.lang.aria"
+            >
+              EN
+            </button>
+          </div>
+
+          <a class="cta-btn" href="#join">
+            <span data-i18n="cta.register">سجل الآن</span>
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <button
+          id="menuBtn"
+          class="mobile-toggle"
+          type="button"
+          aria-label="القائمة الرئيسية"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          data-i18n-attr="aria-label:controls.menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#home"         data-i18n="nav.home">الرئيسية</a>
+        <a href="#about"        data-i18n="nav.about">من نحن</a>
+        <a href="#philosophy"   data-i18n="nav.philosophy">فلسفتنا</a>
+        <a href="#programs"     data-i18n="nav.programs">برامجنا</a>
+        <a href="#ahdaf"        data-i18n="nav.goals">أهدافنا</a>
+        <a href="#join-team"    data-i18n="nav.team">انضم لفريقنا</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">قالوا عنا</a>
+        <a class="mobile-cta-link" href="#join" data-i18n="cta.joinFull">التحق بنا (سجل الآن)</a>
+        <a href="#contact"      data-i18n="nav.contact">تواصل معنا</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-effects" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="brand.full">أكاديمية إنسان لبناء القيم</span>
+          </div>
+
+          <h1>
+            <span data-i18n="hero.title1">قيم الإنسان</span>
+            <span class="highlight" data-i18n="hero.title2">حضارة وعمران</span>
+          </h1>
+
+          <p class="hero-desc" data-i18n="hero.desc">
+            رحلة تربوية متكاملة تبدأ بالمعرفة الرشيدة، وتنمو بالقيم الراسخة، وتتحول إلى مهارات عملية، لتصنع أثراً حضارياً ممتداً في الفرد والأسرة والمجتمع.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn-primary" href="#programs">
+              <span data-i18n="hero.btn.explore">اكتشف برامجنا</span>
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <a class="btn-cyan" href="#join">
+              <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
+              <span data-i18n="hero.btn.register">التسجيل المباشر</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon-wrap stat-icon-gold"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-details">
+                <div class="stat-num-row">
+                  <span class="counter" data-target="10">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label" data-i18n="hero.stat1">سنوات من العطاء</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-wrap stat-icon-cyan"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <div class="stat-details">
+                <div class="stat-num-row">
+                  <span class="counter" data-target="5000">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label" data-i18n="hero.stat2">ساعة تدريب وتربية</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon-wrap stat-icon-green"><i class="fa-solid fa-earth-americas"></i></div>
+              <div class="stat-details">
+                <div class="stat-num-row">
+                  <span class="counter" data-target="10000">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label" data-i18n="hero.stat3">مستفيد حول العالم</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <div class="card-icon">
+              <img
+                class="hero-inner-logo"
+                src="images/logo.png"
+                alt="شعار إنسان"
+                data-i18n-attr="alt:logo.insan"
+              />
+            </div>
+            <h3 data-i18n="hero.card.title">علم • قيم • مهارة • أثر</h3>
+            <p data-i18n="hero.card.desc">
+              نصنع بيئات وتجارب تعليمية تثمر شخصية سوية وواعية تبني الحضارة.
+            </p>
+            <div class="card-footer">
+              <span data-i18n="hero.card.footer1">صرح تربوي رائد</span>
+              <strong data-i18n="hero.card.footer2">أثر يبقى</strong>
+            </div>
+          </div>
+
+          <div class="float-badge badge-1">
+            <div class="badge-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div>
+              <strong data-i18n="hero.badge1.title">بناء القيم</strong>
+              <small data-i18n="hero.badge1.sub">نغرس الهوية</small>
+            </div>
+          </div>
+          <div class="float-badge badge-2">
+            <div class="badge-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div>
+              <strong data-i18n="hero.badge2.title">صناعة الوعي</strong>
+              <small data-i18n="hero.badge2.sub">نصنع الغد</small>
+            </div>
+          </div>
+          <div class="float-badge badge-3">
+            <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <strong data-i18n="hero.badge3.title">برامج نوعية</strong>
+              <small data-i18n="hero.badge3.sub">لكافة الفئات</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <a class="scroll-link" href="#about" aria-label="التمرير لأسفل" data-i18n-attr="aria-label:controls.scrollDown">
+          <div class="mouse"><div class="wheel"></div></div>
+          <span data-i18n="hero.scroll">اكتشف رحلتنا</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-header text-center reveal">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="about.kicker">من نحن</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="about.title1">صرحٌ تربوي رائد</span>
+            <em data-i18n="about.title2">يصنع الفرق</em>
+            <span data-i18n="about.title3">في بناء الإنسان الحضاري</span>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="about.desc">
+            مؤسسة تعمل بقيم تربوية ومنظومة علمية ومهارات تطويرية، لبناء الإنسان الذي تُعقد على ناصيته صناعة النهضة الحضارية بأحدث الوسائل والتقنيات العصرية.
+          </p>
+        </div>
+
+        <div class="about-statement-box reveal">
+          <div class="statement-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+          <p class="statement-text" data-i18n="about.statement">
+            "تسعى أكاديمية إنسان لغرس القيم وتعزيزها لجيلٍ يتسلح بها ويحيا لها، يحمل لواءها رسالةً وقضيةً في تربيته وبنائه، في علمه وعمله، في مهاراته وصناعته، ليكون رائداً مؤثراً وللحضارة مشيّداً."
+          </p>
+        </div>
+
+        <div class="about-pillars-grid reveal">
+          <div class="about-pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-compass"></i></div>
+            <h4 data-i18n="about.p1.title">الرؤية والرسالة</h4>
+            <p data-i18n="about.p1.desc">غرس قيم الإيمان والإحسان والاعتزاز بالهوية الإسلامية والإنسانية لبناء جيل نافع لأمته.</p>
+          </div>
+          <div class="about-pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h4 data-i18n="about.p2.title">المنظومة العلمية</h4>
+            <p data-i18n="about.p2.desc">مناهج تربوية مؤصلة تجمع بين عمق الفكر وأحدث التقنيات التطبيقية التي تلبي متطلبات العصر.</p>
+          </div>
+          <div class="about-pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <h4 data-i18n="about.p3.title">نخبة الخبراء والمربين</h4>
+            <p data-i18n="about.p3.desc">كوكبة من كبار العلماء والمفكرين والمستشارين التربويين الحريصين على بناء الفكر والسلوك.</p>
+          </div>
+          <div class="about-pillar-card">
+            <div class="pillar-icon"><i class="fa-solid fa-globe"></i></div>
+            <h4 data-i18n="about.p4.title">الانتشار والأثر المستدام</h4>
+            <p data-i18n="about.p4.desc">برامج حضورية متميزة في مقرنا بإسطنبول، إلى جانب فصول افتراضية تفاعلية للطلاب حول العالم.</p>
+          </div>
+        </div>
+
+        <div class="about-actions-centered text-center reveal">
+          <a class="btn-primary" href="#programs">
+            <span data-i18n="about.btn1">استكشف برامجنا</span>
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          </a>
+          <a class="btn-cyan" href="#join">
+            <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
+            <span data-i18n="about.btn2">التحق بنا الآن</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PHILOSOPHY ===================== -->
+    <section class="section values-section" id="philosophy">
+      <div class="container">
+        <div class="center-head reveal text-center">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="philosophy.kicker">فلسفتنا ورسالتنا</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="philosophy.title1">أربع ركائز تختصر</span>
+            <em data-i18n="philosophy.title2">رحلة البناء.</em>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="philosophy.desc">
+            منهجيتنا المتكاملة في تمكين الإنسان وصناعة الوعي المتوازن بين حاجات العقل والروح والمهارة
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <span class="value-num">01</span>
+            <div class="value-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3 data-i18n="philosophy.v1.title">عِـلـم</h3>
+            <p data-i18n="philosophy.v1.desc">نبحث عن المعرفة الرشيدة المؤصلة، ونحولها إلى وعي وبصيرة وفهم حقيقي لغاية الوجود.</p>
+          </div>
+          <div class="value-card reveal">
+            <span class="value-num">02</span>
+            <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3 data-i18n="philosophy.v2.title">قِـيَـم</h3>
+            <p data-i18n="philosophy.v2.desc">نبني المبادئ الإيمانية والإنسانية التي توجه سلوك الإنسان وتصنع هويته المتزنة.</p>
+          </div>
+          <div class="value-card reveal">
+            <span class="value-num">03</span>
+            <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3 data-i18n="philosophy.v3.title">مَهـارة</h3>
+            <p data-i18n="philosophy.v3.desc">نحول المعرفة إلى قدرة وتطبيق عملي وممارسة إبداعية تواكب متطلبات العصر.</p>
+          </div>
+          <div class="value-card reveal">
+            <span class="value-num">04</span>
+            <div class="value-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <h3 data-i18n="philosophy.v4.title">أثَــر</h3>
+            <p data-i18n="philosophy.v4.desc">نترك بصمة ناصعة ونفعاً متعدياً يبني الأسرة وينهض بالمجتمع ويعمر الأرض.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROGRAMS ===================== -->
+    <section class="section programs-section" id="programs">
+      <div class="container">
+        <div class="programs-kicker reveal text-center">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="programs.kicker">مسارات التعلم</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="programs.title1">برامجنا</span>
+            <em data-i18n="programs.title2">التربوية والتخصصية</em>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="programs.desc">
+            برامج نوعية مدروسة بعناية لتناسب مختلف الفئات العمرية واحتياجاتهم التطويرية
+          </p>
+        </div>
+
+        <div class="prog-boxes">
+          <!-- Program 1 -->
+          <article class="prog-box reveal" data-program="برامج النخبة (العلوم الشرعية)" tabindex="0" role="button" aria-label="برامج النخبة">
+            <div class="prog-box-front">
+              <div class="prog-box-icon"><i class="fa-solid fa-book-quran"></i></div>
+              <span class="prog-category-badge" data-i18n="programs.p1.badge">تأصيل وبناء</span>
+              <h3 data-i18n="programs.p1.title">برامج النخبة</h3>
+              <p class="prog-short-desc" data-i18n="programs.p1.desc">تأصيل منهجي متقدم لبناء الشخصية العلمية الراسخة وتخريج الكفاءات.</p>
+              <span class="prog-box-hint">
+                <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+                <span data-i18n="programs.hint">اكتشف التخصصات والتسجيل</span>
+              </span>
+            </div>
+            <div class="prog-box-back">
+              <h4 data-i18n="programs.p1.title">برامج النخبة</h4>
+              <ul class="prog-sub-list">
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-book-open-reader" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p1.sub1">العلوم الشرعية</strong>
+                    <small data-i18n="programs.p1.sub1desc">تأصيل فكري ومنهجي رصين</small>
+                  </div>
+                </li>
+              </ul>
+              <button class="prog-action-btn" type="button" data-program="برامج النخبة (العلوم الشرعية)">
+                <span data-i18n="programs.register">سجل في هذا المسار</span>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Program 2 -->
+          <article class="prog-box reveal" data-program="برامج المرأة (فنجان وكتاب - فصاحة)" tabindex="0" role="button" aria-label="برامج المرأة">
+            <div class="prog-box-front">
+              <div class="prog-box-icon"><i class="fa-solid fa-gem"></i></div>
+              <span class="prog-category-badge" data-i18n="programs.p2.badge">تمكين ووعي</span>
+              <h3 data-i18n="programs.p2.title">برامج المرأة</h3>
+              <p class="prog-short-desc" data-i18n="programs.p2.desc">مساحات فكرية وتربوية لصقل المهارات والوعي الأسري والمجتمعي الراقي.</p>
+              <span class="prog-box-hint">
+                <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+                <span data-i18n="programs.hint">اكتشف التخصصات والتسجيل</span>
+              </span>
+            </div>
+            <div class="prog-box-back">
+              <h4 data-i18n="programs.p2.title">برامج المرأة</h4>
+              <ul class="prog-sub-list">
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p2.sub1">فنجان وكتاب</strong>
+                    <small data-i18n="programs.p2.sub1desc">جلسات قراءة وحوار راقٍ</small>
+                  </div>
+                </li>
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-feather-pointed" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p2.sub2">فصاحة</strong>
+                    <small data-i18n="programs.p2.sub2desc">مهارات التعبير والبيان والحوار</small>
+                  </div>
+                </li>
+              </ul>
+              <button class="prog-action-btn" type="button" data-program="برامج المرأة (فنجان وكتاب - فصاحة)">
+                <span data-i18n="programs.register">سجل في هذا المسار</span>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Program 3 -->
+          <article class="prog-box reveal" data-program="برامج الأطفال (الرحيق المختوم - الحساب الذهني)" tabindex="0" role="button" aria-label="برامج الأطفال">
+            <div class="prog-box-front">
+              <div class="prog-box-icon"><i class="fa-solid fa-children"></i></div>
+              <span class="prog-category-badge" data-i18n="programs.p3.badge">غرس وتنشئة</span>
+              <h3 data-i18n="programs.p3.title">برامج الأطفال</h3>
+              <p class="prog-short-desc" data-i18n="programs.p3.desc">تنشئة إيمانية وقيمية وذهنية بأساليب تفاعلية ممتعة تزرع حب التعلم.</p>
+              <span class="prog-box-hint">
+                <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+                <span data-i18n="programs.hint">اكتشف التخصصات والتسجيل</span>
+              </span>
+            </div>
+            <div class="prog-box-back">
+              <h4 data-i18n="programs.p3.title">برامج الأطفال</h4>
+              <ul class="prog-sub-list">
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p3.sub1">الرحيق المختوم</strong>
+                    <small data-i18n="programs.p3.sub1desc">السيرة العطرة والقيم النبوية</small>
+                  </div>
+                </li>
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p3.sub2">الحساب الذهني</strong>
+                    <small data-i18n="programs.p3.sub2desc">تنمية الذكاء وسرعة البديهة</small>
+                  </div>
+                </li>
+              </ul>
+              <button class="prog-action-btn" type="button" data-program="برامج الأطفال (الرحيق المختوم - الحساب الذهني)">
+                <span data-i18n="programs.register">سجل في هذا المسار</span>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Program 4 -->
+          <article class="prog-box reveal" data-program="برامج اليافعين (الجيل القيّم - مقام)" tabindex="0" role="button" aria-label="برامج اليافعين">
+            <div class="prog-box-front">
+              <div class="prog-box-icon"><i class="fa-solid fa-users-line"></i></div>
+              <span class="prog-category-badge" data-i18n="programs.p4.badge">هوية وريادة</span>
+              <h3 data-i18n="programs.p4.title">برامج اليافعين والشباب</h3>
+              <p class="prog-short-desc" data-i18n="programs.p4.desc">بناء الشخصية القيادية وتحصين الفكر وتنمية المهارات الحياتية للمستقبل.</p>
+              <span class="prog-box-hint">
+                <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+                <span data-i18n="programs.hint">اكتشف التخصصات والتسجيل</span>
+              </span>
+            </div>
+            <div class="prog-box-back">
+              <h4 data-i18n="programs.p4.back">الشباب والشابات</h4>
+              <ul class="prog-sub-list">
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p4.sub1">الجيل القيّم</strong>
+                    <small data-i18n="programs.p4.sub1desc">بناء معالم الهوية والمسؤولية</small>
+                  </div>
+                </li>
+                <li class="prog-sub-item">
+                  <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                  <div>
+                    <strong data-i18n="programs.p4.sub2">مقام</strong>
+                    <small data-i18n="programs.p4.sub2desc">صناعة المبادرات والأثر القيادي</small>
+                  </div>
+                </li>
+              </ul>
+              <button class="prog-action-btn" type="button" data-program="برامج اليافعين (الجيل القيّم - مقام)">
+                <span data-i18n="programs.register">سجل في هذا المسار</span>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AHDAF ===================== -->
+    <section class="ahdaf-section" id="ahdaf">
+      <div class="ahdaf-bg-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ahdaf-header reveal text-center">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="goals.kicker">أهدافنا الاستراتيجية</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="goals.title1">ما نسعى</span>
+            <em data-i18n="goals.title2">لتحقيقه</em>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="goals.desc">غايات راسخة تقود بوصلة برامجنا وتوجه مبادراتنا التربوية</p>
+        </div>
+
+        <div class="ahdaf-grid">
+          <div class="ahdaf-card reveal">
+            <div class="ahdaf-num">١</div>
+            <div class="ahdaf-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h4 data-i18n="goals.g1.title">البناء التربوي القيمي</h4>
+            <p data-i18n="goals.g1.desc">تأصيل البناء الإنساني المتزن وتعزيز قيم الإيمان والإحسان في وجدان الأجيال.</p>
+          </div>
+          <div class="ahdaf-card reveal">
+            <div class="ahdaf-num">٢</div>
+            <div class="ahdaf-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h4 data-i18n="goals.g2.title">تطوير المهارات التنموية</h4>
+            <p data-i18n="goals.g2.desc">تطوير المهارات المعرفية والتطبيقية الأساسية التي تمكّن الفرد من النجاح والعطاء.</p>
+          </div>
+          <div class="ahdaf-card reveal">
+            <div class="ahdaf-num">٣</div>
+            <div class="ahdaf-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h4 data-i18n="goals.g3.title">الريادة والمبادرة الإنسانية</h4>
+            <p data-i18n="goals.g3.desc">تمكين الإنسان وتأهيله لقيادة المبادرات الإيجابية وصناعة الفرق في مجتمعه.</p>
+          </div>
+          <div class="ahdaf-card reveal">
+            <div class="ahdaf-num">٤</div>
+            <div class="ahdaf-icon"><i class="fa-solid fa-brain"></i></div>
+            <h4 data-i18n="goals.g4.title">صناعة الوعي المتوازن</h4>
+            <p data-i18n="goals.g4.desc">صناعة وعي رشيد يحقق التوازن بين متطلبات العقل وغذاء الروح وحاجات الجسد.</p>
+          </div>
+          <div class="ahdaf-card reveal">
+            <div class="ahdaf-num">٥</div>
+            <div class="ahdaf-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h4 data-i18n="goals.g5.title">التحصين الفكري والسلوكي</h4>
+            <p data-i18n="goals.g5.desc">تحصين الأبناء والشباب من التيارات الهدامة والشبهات والسلوكيات الخاطئة بوعي وأدلة.</p>
+          </div>
+          <div class="ahdaf-card reveal">
+            <div class="ahdaf-num">٦</div>
+            <div class="ahdaf-icon"><i class="fa-solid fa-people-roof"></i></div>
+            <h4 data-i18n="goals.g6.title">تعزيز قيم الأسرة والمجتمع</h4>
+            <p data-i18n="goals.g6.desc">رصد القيم النبيلة داخل الفرد والأسرة وتنميتها لبناء مجتمع متماسك وناهض.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="testi-head reveal text-center">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="testimonials.kicker">قالوا عنا</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="testimonials.title1">قامات علمية وفكرية</span>
+            <em data-i18n="testimonials.title2">تثق في مسيرة إنسان</em>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="testimonials.desc">
+            نخبة من كبار العلماء والمفكرين والمربين الذين واكبوا رسالة الأكاديمية وأشادوا بأثرها
+          </p>
+        </div>
+
+        <div class="testimonials-wrapper reveal">
+          <div class="testimonials-track-container" id="testimonialsTrackContainer">
+            <div class="testimonials-track" id="testimonialsTrack">
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img1.png" alt="أ.د. عصام البشير" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t1.name">أ.د. عصام البشير</h4>
+                    <span class="doctor-role" data-i18n="t1.role">نائب رئيس الاتحاد العالمي لعلماء المسلمين</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t1.c1">وزير الأوقاف في جمهورية السودان سابقاً</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t1.c2">رئيس مركز الفكر الإسلامي والدراسات المعاصرة</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img2.png" alt="د. عبد الوهاب الطريري" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t2.name">د. عبد الوهاب الطريري</h4>
+                    <span class="doctor-role" data-i18n="t2.role">عالم ومفكر إسلامي وأستاذ جامعي</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t2.c1">المشرف العام على مؤسسة الإسلام اليوم</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t2.c2">أستاذ في أكاديمية باشاك شهير للعلوم الشرعية</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img3.png" alt="م. فاضل سليمان" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t3.name">م. فاضل سليمان</h4>
+                    <span class="doctor-role" data-i18n="t3.role">مدير مؤسسة جسور للتعريف بالإسلام</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t3.c1">باحث ومحاضر دولي ومقدم برامج تلفزيونية</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t3.c2">عضو الاتحاد العالمي لعلماء المسلمين</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img4.png" alt="د. محمد السيد" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t4.name">د. محمد السيد</h4>
+                    <span class="doctor-role" data-i18n="t4.role">داعية وخطيب ومربٍّ معتمد</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t4.c1">معد ومقدم سلاسل البرامج الدعوية والتربوية</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t4.c2">مستشار أسري وبناء شخصية</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img5.png" alt="د. أيوب الأيوب" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t5.name">د. أيوب الأيوب</h4>
+                    <span class="doctor-role" data-i18n="t5.role">خبير تنموي ومدرب دولي معتمد</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t5.c1">مستشار وزير النفط الكويتي سابقاً</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t5.c2">رئيس مجلس إدارة مؤسسة البترول الكويتية سابقاً</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img7.png" alt="د. جمال عبد الستار" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t6.name">د. جمال عبد الستار</h4>
+                    <span class="doctor-role" data-i18n="t6.role">رئيس الجامعة العالمية للتجديد</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t6.c1">عميد أكاديمية بناء لإعداد العلماء</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t6.c2">أستاذ بجامعة الأزهر الشريف سابقاً</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img8.png" alt="د. محمد العزازي" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t7.name">د. محمد العزازي</h4>
+                    <span class="doctor-role" data-i18n="t7.role">باحث وأكاديمي وداعية مصري</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t7.c1">مدير بمؤسسة جسور للتعريف بالإسلام</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t7.c2">مقدم برامج ومحاضر متخصص في الفكر الإسلامي</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/adil.png" alt="د. عادل راشد" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t8.name">د. عادل راشد</h4>
+                    <span class="doctor-role" data-i18n="t8.role">رئيس الجالية المصرية في تركيا</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t8.c1">عضو الاتحاد العالمي لعلماء المسلمين</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t8.c2">برلماني مصري سابق وناشط مجتمعي</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img9.png" alt="أ. إبراهيم العسس" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t9.name">أ. إبراهيم العسس</h4>
+                    <span class="doctor-role" data-i18n="t9.role">باحث وخبير تنموي وإعلامي</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t9.c1">معد ومقدم برامج فكرية وثقافية</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t9.c2">مستشار تدريب وتطوير ذاتي</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <div class="doctor-card">
+                  <div class="doctor-photo-wrap">
+                    <img class="doctor-photo" src="images/d/img10.png" alt="د. علي آل إبراهيم" loading="lazy" />
+                  </div>
+                  <div class="doctor-info">
+                    <h4 class="doctor-name" data-i18n="t10.name">د. علي آل إبراهيم</h4>
+                    <span class="doctor-role" data-i18n="t10.role">أكاديمي وباحث وخبير دولي</span>
+                    <ul class="doctor-creds">
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t10.c1">نائب رئيس الشبكة الإقليمية للمسؤولية الاجتماعية</span></li>
+                      <li><i class="fa-solid fa-check"></i><span data-i18n="t10.c2">خبير في التنمية المستدامة والمبادرات القيمية</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="carousel-bottom">
+            <div class="carousel-controls">
+              <button id="prevBtn" class="carousel-btn" type="button" aria-label="السابق" data-i18n-attr="aria-label:controls.prev">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <div id="autoIndicator" class="auto-indicator" title="حالة الحركة التلقائية" data-i18n-attr="title:controls.autoStatus">
+                <span class="pulse-dot"></span>
+                <span class="auto-indicator-text" data-i18n="controls.autoplay">حركة تلقائية مستمرة</span>
+              </div>
+              <button id="nextBtn" class="carousel-btn" type="button" aria-label="التالي" data-i18n-attr="aria-label:controls.next">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOCIAL ===================== -->
+    <section class="social-section">
+      <div class="social-section-bg" aria-hidden="true">
+        <div class="social-bg-orb orb-1"></div>
+        <div class="social-bg-orb orb-2"></div>
+      </div>
+      <div class="container">
+        <div class="social-head reveal text-center">
+          <div class="kicker light centered">
+            <span class="line"></span>
+            <span data-i18n="social.kicker">تابع رحلتنا</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="social-main-title">
+            <span data-i18n="social.title1">كن قريباً من مجتمع</span>
+            <em data-i18n="social.title2">إنسان.</em>
+          </h2>
+          <p class="social-main-desc" data-i18n="social.desc">تابع أحدث البثوث، المقاطع التربوية، والفعاليات عبر منصاتنا الرسمية.</p>
+        </div>
+
+        <div class="social-platform-grid">
+          <a class="social-platform-card reveal" href="https://www.instagram.com/insan.academy.tr/" target="_blank" rel="noopener">
+            <div class="sp-icon sp-instagram"><i class="fa-brands fa-instagram"></i></div>
+            <div class="sp-info"><strong>Instagram</strong><small>@insan.academy.tr</small></div>
+            <div class="sp-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
+          <a class="social-platform-card reveal" href="https://www.youtube.com/@insanacademy_org" target="_blank" rel="noopener">
+            <div class="sp-icon sp-youtube"><i class="fa-brands fa-youtube"></i></div>
+            <div class="sp-info"><strong>YouTube</strong><small data-i18n="brand.short">أكاديمية إنسان</small></div>
+            <div class="sp-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
+          <a class="social-platform-card reveal" href="https://www.facebook.com/insanacademy.org" target="_blank" rel="noopener">
+            <div class="sp-icon sp-facebook"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="sp-info"><strong>Facebook</strong><small data-i18n="brand.short">أكاديمية إنسان</small></div>
+            <div class="sp-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
+          <a class="social-platform-card reveal" href="https://web.telegram.org/k/#@insanacademy" target="_blank" rel="noopener">
+            <div class="sp-icon sp-telegram"><i class="fa-brands fa-telegram"></i></div>
+            <div class="sp-info"><strong>Telegram</strong><small>@insanacademytr</small></div>
+            <div class="sp-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
+          <a class="social-platform-card reveal" href="https://wa.me/905009477911" target="_blank" rel="noopener">
+            <div class="sp-icon sp-whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="sp-info"><strong>WhatsApp</strong><small dir="ltr">+90 500 947 7911</small></div>
+            <div class="sp-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN TEAM ===================== -->
+    <section class="section join-team-section" id="join-team">
+      <div class="container">
+        <div class="join-team-head reveal text-center">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="team.kicker">انضم إلى فريقنا</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="team.title1">كن جزءاً من</span>
+            <em data-i18n="team.title2">صناعة الأثر</em>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="team.desc">
+            نبحث دائماً عن أصحاب الهمم العالية والكفاءات المتميزة للانضمام إلى فريق أكاديمية إنسان
+          </p>
+        </div>
+
+        <div class="join-team-grid">
+          <div class="join-team-card reveal">
+            <div class="jt-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3 data-i18n="team.c1.title">متطوعاً</h3>
+            <p data-i18n="team.c1.desc">ساهم بوقتك وجهدك في خدمة رسالتنا التربوية وكن جزءاً من التغيير الإيجابي في المجتمع.</p>
+            <a class="jt-btn" href="https://wa.me/905009477911?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D9%86%D8%B6%D9%85%D8%A7%D9%85%20%D9%83%D9%85%D8%AA%D8%B7%D9%88%D8%B9" target="_blank" rel="noopener">
+              <span data-i18n="team.apply">تقدم بطلب</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="join-team-card reveal">
+            <div class="jt-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3 data-i18n="team.c2.title">محاضراً</h3>
+            <p data-i18n="team.c2.desc">شارك خبرتك العلمية والأكاديمية مع طلابنا وكن مصدر إلهام للأجيال القادمة.</p>
+            <a class="jt-btn" href="https://wa.me/905009477911?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D9%86%D8%B6%D9%85%D8%A7%D9%85%20%D9%83%D9%85%D8%AD%D8%A7%D8%B6%D8%B1" target="_blank" rel="noopener">
+              <span data-i18n="team.apply">تقدم بطلب</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="join-team-card reveal">
+            <div class="jt-icon"><i class="fa-solid fa-user-gear"></i></div>
+            <h3 data-i18n="team.c3.title">العضوية</h3>
+            <p data-i18n="team.c3.desc">قدم برامجك التدريبية المتخصصة وأسهم في تطوير مهارات المشاركين في مختلف المجالات.</p>
+            <a class="jt-btn" href="https://wa.me/905009477911?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D9%86%D8%B6%D9%85%D8%A7%D9%85%20%D9%83%D9%85%D8%AF%D8%B1%D8%A8" target="_blank" rel="noopener">
+              <span data-i18n="team.apply">تقدم بطلب</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN FORM ===================== -->
+    <section class="join-section" id="join">
+      <div class="container">
+        <div class="join-header reveal text-center">
+          <div class="kicker centered">
+            <span class="line"></span>
+            <span data-i18n="join.kicker">التحق بنا</span>
+            <span class="line"></span>
+          </div>
+          <h2 class="section-title">
+            <span data-i18n="join.title1">انضم إلى</span>
+            <em data-i18n="join.title2">رحلة التميز والقيم</em>
+          </h2>
+          <p class="section-desc mx-auto" data-i18n="join.desc">
+            سجل الآن وسيتواصل معك المرشد التربوي لتحديد المستوى وتأكيد الانضمام
+          </p>
+        </div>
+
+        <form class="join-form reveal" id="joinForm" novalidate>
+          <!-- Honeypot (spam protection) -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
+
+          <div class="join-form-grid">
+            <div class="form-row">
+              <div class="field-wrap">
+                <label for="joinName"><span data-i18n="form.name">الاسم واللقب</span> <span class="required">*</span></label>
+                <input type="text" id="joinName" name="fullName" required autocomplete="name" data-i18n-attr="placeholder:form.name.ph" placeholder="اسمك الكريم" />
+                <span class="error-msg" id="error-joinName" role="alert"></span>
+              </div>
+              <div class="field-wrap">
+                <label for="joinAge"><span data-i18n="form.age">العمر</span> <span class="required">*</span></label>
+                <input type="number" id="joinAge" name="age" min="5" max="99" required data-i18n-attr="placeholder:form.age" placeholder="العمر" />
+                <span class="error-msg" id="error-joinAge" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field-wrap">
+                <label for="joinPhone"><span data-i18n="form.phone">رقم الهاتف (مع رمز الدولة)</span> <span class="required">*</span></label>
+                <input type="tel" id="joinPhone" name="phone" required autocomplete="tel" placeholder="+90 5XX XXX XXXX" dir="ltr" />
+                <span class="error-msg" id="error-joinPhone" role="alert"></span>
+              </div>
+              <div class="field-wrap">
+                <label for="joinEmail"><span data-i18n="form.email">البريد الإلكتروني</span> <span class="required">*</span></label>
+                <input type="email" id="joinEmail" name="email" required autocomplete="email" placeholder="example@email.com" dir="ltr" />
+                <span class="error-msg" id="error-joinEmail" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field-wrap">
+                <label for="joinPath"><span data-i18n="form.path">المسار أو البرنامج المطلوب</span> <span class="required">*</span></label>
+                <select id="joinPath" name="programPath" required>
+                  <option value="" data-i18n="form.path.ph">-- اختر المسار المناسب --</option>
+                  <option value="برامج النخبة (العلوم الشرعية)" data-i18n="form.opt1">برامج النخبة — العلوم الشرعية</option>
+                  <option value="برامج المرأة (فنجان وكتاب - فصاحة)" data-i18n="form.opt2">برامج المرأة — فنجان وكتاب / فصاحة</option>
+                  <option value="برامج الأطفال (الرحيق المختوم - الحساب الذهني)" data-i18n="form.opt3">برامج الأطفال — الرحيق المختوم / الحساب الذهني</option>
+                  <option value="برامج اليافعين (الجيل القيّم - مقام)" data-i18n="form.opt4">برامج اليافعين والشباب — الجيل القيّم / مقام</option>
+                  <option value="استشارة تربوية عامة" data-i18n="form.opt5">استشارة لاختيار البرنامج المناسب</option>
+                </select>
+                <span class="error-msg" id="error-joinPath" role="alert"></span>
+              </div>
+              <div class="field-wrap">
+                <label for="joinStudyMode" data-i18n="form.mode">طريقة الحضور المفضلة</label>
+                <select id="joinStudyMode" name="studyMode">
+                  <option value="حضوري في إسطنبول" data-i18n="form.mode1">حضوري (مقر الأكاديمية - باشاك شهير)</option>
+                  <option value="أونلاين عن بعد" data-i18n="form.mode2">أونلاين (عن بعد عبر Zoom)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field-wrap">
+                <label for="joinNationality"><span data-i18n="form.nationality">الجنسية</span> <span class="required">*</span></label>
+                <input type="text" id="joinNationality" name="nationality" required data-i18n-attr="placeholder:form.nationality" placeholder="الجنسية" />
+                <span class="error-msg" id="error-joinNationality" role="alert"></span>
+              </div>
+              <div class="field-wrap">
+                <label for="joinResidence"><span data-i18n="form.residence">بلد الإقامة</span> <span class="required">*</span></label>
+                <input type="text" id="joinResidence" name="residence" required data-i18n-attr="placeholder:form.residence.ph" placeholder="مثال: تركيا - إسطنبول" />
+                <span class="error-msg" id="error-joinResidence" role="alert"></span>
+              </div>
+            </div>
+            
+
+            <div class="form-actions-group">
+              <button class="submit-btn join-submit" id="joinSubmitBtn" type="submit">
+                <span data-i18n="form.submit">إرسال طلب التسجيل</span>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button class="whatsapp-submit-btn" id="joinWhatsAppBtn" type="button">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <span data-i18n="form.whatsapp">إرسال فوري عبر واتساب</span>
+              </button>
+            </div>
+
+            <p class="privacy-note">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <span data-i18n="form.privacy">معلوماتك في أمان تام وتُستخدم حصرياً لأغراض التنسيق والقبول الأكاديمي.</span>
+            </p>
+          </div>
+
+          <div class="form-success" id="joinSuccess" role="status" aria-live="polite">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <div class="success-text">
+              <strong data-i18n="form.successTitle">تم استلام طلبك بنجاح! ✨</strong>
+              <span data-i18n="form.successDesc">سيتواصل معك المشرف الأكاديمي خلال 24 ساعة لتأكيد الحجز.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <div class="kicker">
+            <span class="line"></span>
+            <span data-i18n="contact.kicker">تواصل معنا</span>
+          </div>
+          <h2>
+            <span data-i18n="contact.title1">يسعدنا تواصلكم</span>
+            <em data-i18n="contact.title2">أبوابنا مفتوحة لكم دائماً.</em>
+          </h2>
+          <p data-i18n="contact.desc">
+            لأي استفسارات حول البرامج، التسجيل، الشراكات الأكاديمية أو الاستشارات التربوية، يسعد فريقنا باستقبال رسائلكم.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-i18n="contact.address.title">المقر الرئيسي</strong>
+                <span><a href="https://maps.app.goo.gl/rqTT9r1cr1GWvDhy5" target="_blank" rel="noopener" data-i18n="contact.address.value">باشاك شهير، إسطنبول — تركيا</a></span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong data-i18n="contact.phone.title">الهاتف المباشر</strong>
+                <span><a href="tel:+905009477911" dir="ltr">+90 500 947 7911</a></span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong data-i18n="contact.email.title">البريد الإلكتروني</strong>
+                <span><a href="mailto:info@insanacademy.org">info@insanacademy.org</a></span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong data-i18n="contact.whatsapp.title">واتساب القبول والتسجيل</strong>
+                <span><a href="https://wa.me/905009477911" target="_blank" rel="noopener" dir="ltr">+90 500 947 7911</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
+
+          <div class="form-header">
+            <span data-i18n="contact.form.welcome">مرحباً بك</span>
+            <h3 data-i18n="contact.form.title">أرسل استفسارك</h3>
+          </div>
+
+          <div class="form-row">
+            <div class="field-wrap">
+              <label for="fname"><span data-i18n="form.name.full">الاسم الكامل</span> <span class="required">*</span></label>
+              <input type="text" id="fname" name="name" required autocomplete="name" data-i18n-attr="placeholder:form.name.ph" placeholder="اسمك الكريم" />
+              <span class="error-msg" id="error-fname" role="alert"></span>
+            </div>
+            <div class="field-wrap">
+              <label for="fphone" data-i18n="form.phone.short">رقم الهاتف</label>
+              <input type="tel" id="fphone" name="phone" autocomplete="tel" placeholder="+90 5XX XXX XXXX" dir="ltr" />
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label for="femail"><span data-i18n="form.email">البريد الإلكتروني</span> <span class="required">*</span></label>
+            <input type="email" id="femail" name="email" required autocomplete="email" placeholder="example@email.com" dir="ltr" />
+            <span class="error-msg" id="error-femail" role="alert"></span>
+          </div>
+
+          <div class="field-wrap">
+            <label for="fsubject" data-i18n="form.subject">نوع الاستفسار</label>
+            <select id="fsubject" name="subject">
+              <option value="تسجيل في برنامج" data-i18n="form.subject.opt1">تسجيل في برنامج</option>
+              <option value="استشارة تربوية" data-i18n="form.subject.opt2">استشارة تربوية</option>
+              <option value="شراكة وتعاون" data-i18n="form.subject.opt3">شراكة وتعاون مؤسسي</option>
+              <option value="استفسار عام" data-i18n="form.subject.opt4">استفسار عام</option>
+            </select>
+          </div>
+
+          <div class="field-wrap">
+            <label for="fmessage"><span data-i18n="form.message">الرسالة</span> <span class="required">*</span></label>
+            <textarea id="fmessage" name="message" required data-i18n-attr="placeholder:form.message.ph" placeholder="اكتب تفاصيل استفسارك هنا..."></textarea>
+            <span class="error-msg" id="error-fmessage" role="alert"></span>
+          </div>
+
+          <button class="submit-btn" id="contactSubmitBtn" type="submit">
+            <span data-i18n="form.send">إرسال الرسالة</span>
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          </button>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <div class="success-text">
+              <strong data-i18n="contact.successTitle">تم إرسال رسالتك بنجاح! ✨</strong>
+              <span data-i18n="contact.successDesc">شكراً لتواصلك معنا، سنرد عليك في أقرب وقت.</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img class="footer-brand-logo" src="images/logo.png" alt="أكاديمية إنسان" data-i18n-attr="alt:logo.insanAcademy" />
+          <span class="footer-brand-title" data-i18n="brand.full">أكاديمية إنسان لبناء القيم</span>
+        </div>
+        <p data-i18n="footer.desc">
+          صرح تربوي قيمي يسعى لتمكين الإنسان وبناء وعيه ليكون صانعاً للحضارة ورائداً في أثره.
+        </p>
+        <div class="footer-socials">
+          <a aria-label="Instagram" href="https://www.instagram.com/insan.academy.tr/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="YouTube" href="https://www.youtube.com/@insanacademy_org" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+          <a aria-label="Facebook" href="https://www.facebook.com/insanacademy.org" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a aria-label="Telegram" href="https://web.telegram.org/k/#@insanacademy" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i></a>
+          <a aria-label="WhatsApp" href="https://wa.me/905009477911" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer.links">روابط سريعة</h4>
+        <a href="#about"        data-i18n="nav.about">من نحن</a>
+        <a href="#philosophy"   data-i18n="footer.link1">فلسفتنا ورسالتنا</a>
+        <a href="#programs"     data-i18n="footer.link2">برامجنا ومساراتنا</a>
+        <a href="#ahdaf"        data-i18n="footer.link3">أهدافنا الاستراتيجية</a>
+        <a href="#join-team"    data-i18n="nav.team">انضم لفريقنا</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">قالوا عنا</a>
+        <a href="#join"         data-i18n="footer.link4">التسجيل والالتحاق</a>
+      </div>
+
+      <div>
+        <h4 data-i18n="contact.kicker">تواصل معنا</h4>
+        <a href="https://wa.me/905009477911" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> <span dir="ltr">+90 500 947 7911</span></a>
+        <a href="mailto:info@insanacademy.org"><i class="fa-regular fa-envelope"></i> info@insanacademy.org</a>
+        <a href="https://maps.app.goo.gl/rqTT9r1cr1GWvDhy5" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i> <span data-i18n="footer.location">باشاك شهير، إسطنبول</span></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">أكاديمية إنسان لبناء القيم. جميع الحقوق محفوظة.</span></span>
+      <span data-i18n="footer.slogan">قيم الإنسان .. حضارة وعمران ✨</span>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING WHATSAPP ===================== -->
+  <a class="floating-whatsapp" href="https://wa.me/905009477911?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B1%D8%A7%D9%85%D8%AC%20%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9%20%D8%A5%D9%86%D8%B3%D8%A7%D9%86" target="_blank" rel="noopener" aria-label="تواصل معنا عبر واتساب" data-i18n-attr="aria-label:controls.whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-tooltip" data-i18n="controls.whatsapp.tip">تحدث معنا مباشرة عبر واتساب</span>
+  </a>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="العودة للأعلى" data-i18n-attr="aria-label:controls.scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
